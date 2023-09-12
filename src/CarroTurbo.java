@@ -17,6 +17,5 @@ public class CarroTurbo extends Vehiculo{
     double potencia = resultado1 + resultado2;
     System.out.println("Potencia carro normal -> " + potencia);
     return potencia;
-
   }
 }
