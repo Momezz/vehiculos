@@ -1,6 +1,5 @@
-public class CarroNormal extends Vehiculo{
-  private double revolucionesXMinuto = 9.6;
-  private double calcularTorque = 745.7;
+public class CarroNormal extends Vehiculo {
+  private static final Double REVOLUCIONES_POR_MINUTO = 9.6;
 
   public CarroNormal() {
   }
@@ -8,10 +7,10 @@ public class CarroNormal extends Vehiculo{
   public CarroNormal(String marca, String referencia, int cilindraje, String caja, String color, int torque) {
     super(marca, referencia, cilindraje, caja, color, torque);
   }
+
   @Override
   public double calcularPotencia() {
-    double potencia = getTorque() * revolucionesXMinuto / calcularTorque;
-    System.out.println("potencia carro -> " + potencia);
+    double potencia = getTorque() * REVOLUCIONES_POR_MINUTO / CALCULAR_TORQUE;
     return potencia;
   }
 }
